@@ -11,7 +11,7 @@ const handleName=()=>{
   }
 
   return (
-      <Profile data={commonProps} hand={handleName()} > <img src={myImage} /> </Profile>
+      <Profile data={commonProps} hand={handleName} > <img src={myImage} /> </Profile>
   );
 }
 
