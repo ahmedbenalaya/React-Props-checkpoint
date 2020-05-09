@@ -1,25 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Profile from './profile/Profile'
+import myImage from './ahmed.jpg'
+
 import './App.css';
 
 function App() {
+  const commonProps= [{id:'1',FullName:'Ben Alaya Ahmed', Bio:'https://www.linkedin.com/in/ahmed-ben-alaya-26454b193/', Profession:'Technicien Superieur en Science et Technologies de l’Information et de la Communications'}];
+const handleName=()=>{
+    alert('Ben Alaya Ahmed')
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Profile data={commonProps} hand={handleName()} > <img src={myImage} /> </Profile>
   );
 }
 
