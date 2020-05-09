@@ -9,14 +9,11 @@ const Profile=(props)=> {
     return (
         <React.Fragment>
             <h1>{props.titre}</h1>
-            {props.data.map((item)=> 
-                    <ul key={item.id}>
-                        <li><span><b>FullName: </b></span>{item.FullName}</li>
-                        <li><span><b>Bio: </b></span>{item.Bio}</li>
-                        <li><span><b>Profession: </b></span>{item.Profession}</li>
+                    <ul>
+                        <li><span><b>FullName: </b></span>{props.commonProps.FullName}</li>
+                        <li><span><b>Bio: </b></span>{props.commonProps.Bio}</li>
+                        <li><span><b>Profession: </b></span>{props.commonProps.Profession}</li>
                     </ul>
-
-            ) } 
             {props.children}
             {props.hand}
             
